@@ -425,6 +425,7 @@ function reviewSummary(draft: AuditDraft, score: number, disposition: PortfolioR
   if (disposition === 'exclude-vendor') return 'Excluded from the personal portfolio because repository ownership or path evidence identifies third-party or vendor code.';
   if (disposition === 'exclude-backup') return 'Excluded as a backup, verification clone, or audit copy rather than an independent project.';
   if (disposition === 'exclude-fixture') return 'Excluded as a fixture, probe, test corpus, or small demonstration workspace.';
+  if (disposition === 'published') return 'Published as a cleared portfolio release; the exact repository URL and commit are recorded in publication metadata.';
   if (disposition === 'already-published') return `Already represented on GitHub${draft.existing ? ` at ${draft.existing.owner}/${draft.existing.name}` : ''}; no duplicate repository should be created.`;
   if (disposition === 'hold-duplicate' || disposition === 'consolidate') return `Part of the canonical ${draft.canonicalName} project family; consolidate instead of publishing this path independently.`;
   if (disposition === 'hold-rights') return 'Substantive work may exist, but public-source rights or corporate/client boundaries require manual clearance before publication.';
