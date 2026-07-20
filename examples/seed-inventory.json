@@ -1,0 +1,18 @@
+{
+  "projects": [],
+  "reviews": [],
+  "scan": {
+    "state": "idle",
+    "roots": [
+      "D:\\"
+    ],
+    "currentPath": null,
+    "directoriesVisited": 0,
+    "projectsFound": 0,
+    "startedAt": null,
+    "completedAt": null,
+    "error": null,
+    "githubAvailable": false,
+    "geminiAvailable": false
+  }
+}
